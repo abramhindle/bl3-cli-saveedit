@@ -115,10 +115,14 @@ options:
 <span class="textOption" id="--unlock"></span> --unlock {ammo,backpack,analyzer,resonator,gunslots,artifactslot,comslot,allslots,tvhm,vehicles,vehicleskins,cubepuzzle,all}
                         Game features to unlock (default: {})
 <span class="flag" id="--copy-nvhm"></span> --copy-nvhm           Copies NVHM/Normal state to TVHM (default: False)
+<span class="flag" id="--copy-tvhm"></span> --copy-tvhm           Copies TVHM to NVHM/Normal (default: False)
 <span class="flag" id="--unfinish-nvhm"></span> --unfinish-nvhm       "Un-finishes" the game: remove all TVHM data and set
                         Playthrough 1 to Not Completed (default: False)
 <span class="textFile" id="-i" filename="/import.txt"></span>  -i IMPORT_ITEMS, --import-items IMPORT_ITEMS
                         Import items from file (default: None)
+<span class="flag" id="--wipe-inventory"></span>  -w, --wipe-inventory  Wipes all items from inventory. Will be processed
+                        before --import-items, so imported items will remain
+                        in inventory. (default: False)
 <span class="flag" id="--allow-fabricator"></span>  --allow-fabricator    Allow importing Fabricator when importing items from
                         file (default: False)
 <span class="textOption" id="--delete-pt1-mission"></span>  --delete-pt1-mission MISSIONPATH
